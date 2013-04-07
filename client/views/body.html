@@ -1,0 +1,13 @@
+<template name="body">
+  {{> header}}
+  <div class="container-fluid">
+    <div class="row-fluid">
+      {{> sidebar}}
+      <!-- start: Content -->
+      <div id="content" class="span11">
+        {{renderPage}}
+      </div>
+      <!-- end: Content -->
+    </div>
+  </div>
+</template>

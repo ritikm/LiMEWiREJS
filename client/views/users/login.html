@@ -1,0 +1,27 @@
+<template name="login">
+
+  <div class="container">
+    <div class="login-wrapper" style="margin-top: 120px">
+      <div style="text-align: center">
+        <i class="icon-fire logo-icon"></i>
+      </div>
+
+      <div id="login-manager">
+        <form action="/login" method="post" id="login-form">
+          <div class="input-group">
+            <input type="text" placeholder="Email" class="input-transparent" id="email" name="email" />
+            <input type="password" placeholder="Password" class="input-transparent" id="password" name="password" />
+          </div>
+          <button id="login-submit" type="button" class="login-button">Login</button>
+        </form>
+      </div>
+
+      <div class="inner-well" style="text-align: center; margin: 20px 0;">
+        <a href="/login" id="login-link" class="button mini rounded gray"><i class="icon-signin"></i> Login</a>
+        <a href="/register" id="register-link" class="button mini rounded gray"><i class="icon-plus"></i> Register</a>
+        <a href="/forgot-pass" id="forgot-link" class="button mini rounded gray"><i class="icon-question-sign"></i> Forgot Password?</a>
+      </div>
+    </div>
+  </div>
+
+</template>

@@ -1,0 +1,32 @@
+<template name="search">
+  {{> searchBar}}
+  <br />
+  {{#unless searchResults}}
+    <div>No results found!</div>
+  {{else}}
+    <div class="box">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Type</th>
+            <th>Username</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each searchResults}}
+            <tr id="{{_id}}">
+              <td class="name">{{name}}</td>
+              <td class="center size">{{getReadableSize size}}</td>
+              <td class="center type">{{type}}</td>
+              <td class="center username">{{filterOnlineUser owners}}</td>
+              <td class="center download"><button class="btn btn-small btn-primary button-download">Download</button>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </div>
+  {{/unless}}
+</template>

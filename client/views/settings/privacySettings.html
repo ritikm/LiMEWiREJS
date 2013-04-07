@@ -1,0 +1,22 @@
+<template name="privacySettings">
+
+  <div class="tab-pane" id="privacy-pane">
+    <form class="form-horizontal" id="privacy-form" action="/settings/update" method="post">
+      <div class="control-group">
+        <label class="control-label" for="privacy">Who can see your files by default</label>
+        <div class="controls">
+          <select id="privacy" name="defaultPrivacy">
+            <option value="friends" {{#if privacyIs "friends"}} selected {{/if}}>Just your Facebook Friends</option>
+            <option value="private" {{#if privacyIs "private"}} selected {{/if}}>Only Me</option>
+          </select>
+        </div>
+      </div>
+      <div class="box-well">
+        <div class="padded text-center">
+          <button type="button" class="button button-submit blue inset">Save Privacy Preferences</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</template>

@@ -1,0 +1,32 @@
+<template name="transfers">
+  {{#unless transfers}}
+    <div>No transfers running!</div>
+  {{else}}
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Size</th>
+          <th>Progress</th>
+          <th>Status</th>
+          <th>User</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each transfers}}
+          <tr id="{{_id}}">
+            <td class="name">{{file.name}}</td>
+            <td class="center size">{{getReadableSize file.size}}</td>
+            <td class="center progress">
+              <div class="progress progress-striped progress-success active">
+                <div class="bar" style="width: 100%;"></div>
+              </div>
+            </td>
+            <td class="center status">{{getTransferStatus from}}</td>
+            <td class="center user">{{from.username}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  {{/unless}}
+</template>

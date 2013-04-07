@@ -1,0 +1,48 @@
+{
+  "meteor": {
+    "git": "https://github.com/meteor/meteor.git",
+    "branch": "master",
+    "commit": "067113a37dd4e7824db1a16d5f7a90c3739eed9c"
+  },
+  "dependencies": {
+    "basePackages": {
+      "filepicker": {},
+      "router": {},
+      "node-modules": {},
+      "transitioner": {},
+      "bootstrap-with-font-awesome": {}
+    },
+    "packages": {
+      "filepicker": {
+        "git": "https://github.com/Filepicker/meteor.git",
+        "tag": "v0.2.0",
+        "commit": "1ae688ad1abfbe6777c465e11a0d5287ad9e4d4a"
+      },
+      "router": {
+        "git": "https://github.com/tmeasday/meteor-router.git",
+        "tag": "v0.3.4",
+        "commit": "8f0d5303de5b93771e91f21f818be27358c2fb30"
+      },
+      "node-modules": {
+        "git": "https://github.com/possibilities/meteor-node-modules.git",
+        "tag": "v0.0.5",
+        "commit": "d502e5091759073a6baed856fadd93012749842d"
+      },
+      "transitioner": {
+        "git": "https://github.com/tmeasday/meteor-transitioner.git",
+        "tag": "v0.2.2",
+        "commit": "ffbef8e7e10dfcefc61394ea8a11f07a6ff97cd9"
+      },
+      "bootstrap-with-font-awesome": {
+        "git": "https://github.com/alexnotov/meteor-bootstrap-and-font-awesome",
+        "tag": "v0.0.1",
+        "commit": "b5b377b754f3bd8d8f4d04756b98b34accf5ce62"
+      },
+      "page-js": {
+        "git": "https://github.com/tmeasday/meteor-page-js.git",
+        "tag": "v1.3.1",
+        "commit": "ee0b651869928abe50b5d06d7f32ccd2e657883a"
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<template name="uploadButton">
+
+  <style type="text/css">
+    #upload-buttons img {
+      width: 20px;
+      height: 20px;
+    }
+  </style>
+
+  <div id="upload-buttons" class="pull-left">
+    <span class="options dropdown">
+      <button id="add-file" class="button green flat inset dropdown-toggle" data-toggle="dropdown">
+        <i class="icon-plus" style="line-height: inherit;"></i>&nbsp;&nbsp;Start Transfer
+      </button>
+      <ul class="dropdown-menu dropdown-left" style="font-size: 13px;">
+        <li>
+          <a class="source-upload"><img src="/img/transmission_icon.png" />&nbsp;&nbsp;Torrent File</a>
+          <a id="magnet-link"><img src="/img/unison-logo.png" />&nbsp;&nbsp;Magnet URL</a>
+          <a class="source-upload"><img src="/img/yellow-down-arrow.png" />&nbsp;&nbsp;Usenet File</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+
+</template>

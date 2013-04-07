@@ -1,0 +1,25 @@
+<template name="sidebar">
+  <!-- start: Main Menu -->
+  <div id="sidebar-left" class="span1">
+    <div class="nav-collapse sidebar-nav">
+      <ul class="nav nav-tabs nav-stacked main-menu">
+        <li id="library" class="{{#if pageIs 'library'}} active {{/if}}"><a href="/library"><i class="fa-icon-folder-open"></i><span class="hidden-tablet"> Library</span></a></li>
+        <li id="search" class="{{#if pageIs 'search'}} active {{/if}}"><a href="/search"><i class="fa-icon-search"></i><span class="hidden-tablet"> Search</span></a></li>
+        <li id="transfers" class="{{#if pageIs 'transfers'}} active {{/if}}"><a href="/transfers"><i class="fa-icon-tasks"></i><span class="hidden-tablet"> Transfers</span></a></li>
+        <li id="settings" class="{{#if pageIs 'settings'}} active {{/if}}"><a href="/settings"><i class="fa-icon-cog"></i><span class="hidden-tablet"> Settings</span></a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- end: Main Menu -->
+</template>
+
+
+
+
+
+
+
+
+
+
+

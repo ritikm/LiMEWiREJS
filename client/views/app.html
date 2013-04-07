@@ -1,0 +1,31 @@
+<head>
+  <title>LiMEWiRE.JS</title>
+
+  <!-- start: Meta -->
+  <meta charset="utf-8">
+  <meta name="description" content="P2P File Sharing Network in the Browser">
+  <meta name="author" content="Loaded">
+  <meta name="keyword" content="">
+  <!-- end: Meta -->
+
+  <!-- start: Mobile Specific -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- end: Mobile Specific -->
+
+  <!-- start: Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <!-- end: Favicon -->
+</head>
+<body>
+
+  {{#if loggingIn}}
+
+    <h1>LOADING...</h1>
+
+  {{else}}
+
+    {{> body}}
+
+  {{/if}}
+
+</body>
