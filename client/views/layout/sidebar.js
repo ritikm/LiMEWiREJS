@@ -4,9 +4,9 @@ Template.sidebar.helpers({
   }
 });
 
-Template.sidebar.events = {
-  'click a': function (e) {
-    e.preventDefault();
-    console.log($(this))
-  }
-};
+// Template.sidebar.events = {
+//   'click a': function (e) {
+//     e.preventDefault();
+//     console.log($(this))
+//   }
+// };

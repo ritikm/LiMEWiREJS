@@ -16,7 +16,10 @@ Template.search.helpers({
   filterOnlineUser: function (users) {
     console.log("users", users);
     for (var i = 0, len = users.length; i < len; i++) {
-      var user = Users.find({ "_id": users[i]._id, "profile.online": true }).fetch();
+      var userInfo = users[i];
+      console.log("X", userInfo);
+      var user = Users.find({ "_id": userInfo }).fetch();
+      console.log("user", user);
       if (user[0]) {
         return user[0].username;
       }
